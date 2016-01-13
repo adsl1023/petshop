@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+<!-- ... 登入、會員修改、優惠專區按鈕css... -->
+.button {
+   border-top: 1px solid #ffea05;
+   background: #fafafa;
+   background: -webkit-gradient(linear, left top, left bottom, from(#ffea05), to(#fafafa));
+   background: -webkit-linear-gradient(top, #ffea05, #fafafa);
+   background: -moz-linear-gradient(top, #ffea05, #fafafa);
+   background: -ms-linear-gradient(top, #ffea05, #fafafa);
+   background: -o-linear-gradient(top, #ffea05, #fafafa);
+   padding: 10px 20px;
+   -webkit-border-radius: 14px;
+   -moz-border-radius: 14px;
+   border-radius: 14px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #2b2a2b;
+   font-size: 20px;
+   font-family: Georgia, Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   float:left;
+   }
+.button:hover {
+   border-top-color: #586785;
+   background: #586785;
+   color: #ccc;
+   }
+.button:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }

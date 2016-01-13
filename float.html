@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>無標題文件</title>
+</head>
+
+<body>
+<div id="waterMark" style="position:absolute"> 
+<dd><a href="連結網址" target="_new"> 
+<img src="圖片網址" border="0" width="88" height="31"></a></dd> 
+</div> 
+<script language="JavaScript1.2"> 
+<!-- 
+markW = 88; 
+markH = 31; 
+markX = 90; 
+markY = 96; 
+markRefresh = 20; 
+
+// set common object reference 
+if (!document.all) document.all = document; 
+if(!document.all.waterMark.style)document.all.waterMark.style= 
+document.all.waterMark; 
+
+wMark = document.all.waterMark.style; 
+wMark.width = markW; 
+wMark.height = markH; 
+navDOM = window.innerHeight; // Nav DOM flag 
+
+function setVals() { 
+barW = 0; // scrollbar compensation for PC Nav 
+barH = 0; 
+if (navDOM) { 
+if (document.height > innerHeight) barW = 20; 
+if (document.width > innerWidth) barH = 20; 
+} else { 
+innerWidth = document.body.clientWidth; 
+innerHeight = document.body.clientHeight; 
+} 
+posX = ((innerWidth - markW)-barW) * (markX/100); 
+posY = ((innerHeight - markH)-barH) * (markY/100); 
+} 
+
+function wRefresh() { 
+wMark.left = posX + (navDOM?pageXOffset:document.body.scrollLeft); 
+wMark.top = posY + (navDOM?pageYOffset:document.body.scrollTop); 
+} 
+
+function markMe() { 
+setVals(); 
+window.onresize=setVals; 
+markID = setInterval ("wRefresh()",markRefresh); 
+} 
+
+window.onload=markMe; // safety for Mac IE4.5 
+
+//--> 
+</script> 
+<!------------ 插入控制碼區段結束 ------------> 
+
+
+</body>
+</html>
